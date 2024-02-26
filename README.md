@@ -4,7 +4,9 @@
 This project is designed to process order data, convert currencies, calculate various fees, and generate weekly aggregated reports for each affiliate. The reports are saved as Excel files, providing a clear overview of affiliate activities and financials.
 
 ## Getting Started
-
+Clone the repository
+   ```bash
+   git clone https://github.com/tmetreveli/affiliate-report.git
 ### Prerequisites
 - Python 3.x
 - pandas library
@@ -19,5 +21,5 @@ This project is designed to process order data, convert currencies, calculate va
 ### Running the Project
 Navigate to the src directory and run main.py:
 
-cd src
+cd affiliate-report/src
 python main.py
