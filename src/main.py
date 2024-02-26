@@ -78,9 +78,6 @@ fee_columns.columns = ['Processing Fee', 'Refund Fee', 'Chargeback Fee']
 # Concatenate the original filtered_orders DataFrame with the new fee columns
 filtered_orders_with_fees = pd.concat([filtered_orders, fee_columns], axis=1)
 
-# Save the DataFrame with fees to a CSV file
-filtered_orders_with_fees.to_csv("orders_with_fees20.csv", index=False)
-
 # Calculate the start of the week for each order
 filtered_orders_with_fees['Week Start'] = filtered_orders_with_fees['Order Date'] - pd.to_timedelta(filtered_orders_with_fees['Order Date'].dt.dayofweek, unit='D')
 
